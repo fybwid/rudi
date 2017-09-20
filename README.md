@@ -1,24 +1,35 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ruby Version
+`2.4.0p0`
 
-Things you may want to cover:
+## Rails Version
+`5.1.4`
 
-* Ruby version
+## Prepare Rails for BDD
+### Generate Rudi Rails App with PostgreSQL, skip bundle, skip-test, and skip-git
+`rails new rudi -d postgresql -B --skip-bundle -T --skip-test -G --skip-git`
 
-* System dependencies
+### Install Gems Locally
+```
+cd rudi && bundle install --path vendor/bundle
+```
 
-* Configuration
+- [x] Ruby version
+- [x] Rails version
 
-* Database creation
+- [ ] System dependencies
 
-* Database initialization
+- [ ] Configuration
 
-* How to run the test suite
+- [ ] Database creation
 
-* Services (job queues, cache servers, search engines, etc.)
+- [ ] Database initialization
 
-* Deployment instructions
+- [ ] How to run the test suite
 
-* ...
+- [ ] Services (job queues, cache servers, search engines, etc.)
+
+- [ ] Deployment instructions
+
+- [ ] ...
