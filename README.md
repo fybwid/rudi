@@ -77,13 +77,31 @@ bundle install --path vendor/bundle
 rails generate cucumber:install
 ```
 
+### Add [Selenium Webdriver](https://github.com/SeleniumHQ/selenium/tree/master/rb) Gem
+```bash
+group :test do
+  gem 'shoulda-matchers'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+  gem 'selenium-webdriver'
+end
+```
+
+#### Install Gem Locally
+```bash
+bundle install --path vendor/bundle
+```
+
+
+
 - [x] Ruby version
 - [x] Rails version
 - [ ] System dependencies
-- [ ] Configuration
+- [x] Configuration
 - [ ] Database creation
 - [ ] Database initialization
 - [ ] How to run the test suite
 - [ ] Services (job queues, cache servers, search engines, etc.)
 - [ ] Deployment instructions
+- [ ] Documentation ([Rdoc](https://github.com/ruby/rdoc), [Yard](https://yardoc.org/))
 - [ ] ...
