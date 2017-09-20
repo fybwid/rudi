@@ -29,6 +29,17 @@ end
 rails generate rspec:install
 ```
 
+#### Add Shoulda Matchers gem Configuration
+Open `spec/rails_helper.rb` and add the following configuration to the end:
+```ruby
+  Shoulda::Matchers.configure do |config|
+    config.integrate do |with|
+      with.test_framework :rspec
+      with.library :rails
+    end
+  end
+```
+
 - [x] Ruby version
 - [x] Rails version
 - [ ] System dependencies
