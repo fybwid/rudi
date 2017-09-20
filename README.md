@@ -72,6 +72,11 @@ end
 bundle install --path vendor/bundle
 ```
 
+#### Bootstrap the application with Cucumber
+```bash
+rails generate cucumber:install
+```
+
 - [x] Ruby version
 - [x] Rails version
 - [ ] System dependencies
