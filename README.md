@@ -1,13 +1,13 @@
 # README
 
-## Ruby Version
+## [Ruby](https://www.ruby-lang.org/en/) Version
 `2.4.0p0`
 
-## Rails Version
+## [Ruby on Rails](https://rubyonrails.org/) Version
 `5.1.4`
 
 ## Prepare Rails for BDD
-### Generate Rudi Rails App with PostgreSQL, skip bundle, skip-test, and skip-git
+### Generate Rudi Rails App with [PostgreSQL](https://www.postgresql.org/), skip bundle, skip-test, and skip-git
 ```bash
 rails new rudi -d postgresql -B --skip-bundle -T --skip-test -G --skip-git
 ```
@@ -50,6 +50,20 @@ Open `spec/rails_helper.rb` and add the following configuration to the end:
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+end
+```
+
+#### Install Gem Locally
+```bash
+bundle install --path vendor/bundle
+```
+
+### Add [Cucumber](https://github.com/cucumber/cucumber-rails) Gem
+```bash
+group :test do
+  gem 'shoulda-matchers'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
 end
 ```
 
