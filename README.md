@@ -24,6 +24,11 @@ group :development, :test do
 end
 ```
 
+#### Install Gem Locally
+```bash
+bundle install --path vendor/bundle
+```
+
 #### Initialize the `spec` directory
 ```bash
 rails generate rspec:install
@@ -38,6 +43,19 @@ Open `spec/rails_helper.rb` and add the following configuration to the end:
       with.library :rails
     end
   end
+```
+
+### Add [Factory Girl](https://github.com/thoughtbot/factory_girl) Gem
+```bash
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end
+```
+
+#### Install Gem Locally
+```bash
+bundle install --path vendor/bundle
 ```
 
 - [x] Ruby version
