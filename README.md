@@ -1,5 +1,7 @@
 # README
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/fybwid/rudi.svg)](https://greenkeeper.io/)
+
 ## [Ruby](https://www.ruby-lang.org/en/) Version
 `2.4.0p0`
 
